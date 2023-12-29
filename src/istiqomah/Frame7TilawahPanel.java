@@ -4,6 +4,8 @@
  */
 package istiqomah;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ammar Dzakwan
@@ -44,10 +46,10 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
         Hasilnya1 = new javax.swing.JLabel();
         isiKekosongan = new javax.swing.JPanel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jLabel3 = new javax.swing.JLabel();
+        HalAwalTxt = new javax.swing.JTextField();
+        HalAkhirTxt = new javax.swing.JTextField();
+        Check = new javax.swing.JCheckBox();
+        Total = new javax.swing.JLabel();
         UpdateBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -127,20 +129,20 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7" }));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        HalAwalTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                HalAwalTxtActionPerformed(evt);
             }
         });
 
-        jCheckBox1.setText("Done ");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        Check.setText("Done ");
+        Check.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                CheckActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Total 0 Halaman");
+        Total.setText("Total 0 Halaman");
 
         UpdateBtn.setText("Update");
         UpdateBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -168,13 +170,13 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)
                                         .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(jLabel3))
+                                    .addComponent(Total))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jCheckBox1)
+                                    .addComponent(Check)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
-                                        .addComponent(jTextField2))
+                                        .addComponent(HalAwalTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
+                                        .addComponent(HalAkhirTxt))
                                     .addComponent(UpdateBtn)))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -199,15 +201,15 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(HalAwalTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(HalAkhirTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox1)
-                    .addComponent(jLabel3))
+                    .addComponent(Check)
+                    .addComponent(Total))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(UpdateBtn)
                 .addGap(21, 21, 21)
@@ -226,17 +228,17 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void HalAwalTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HalAwalTxtActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_HalAwalTxtActionPerformed
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+    private void CheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckActionPerformed
         // TODO add your handling code here:
         
         //if (){
             
         //}
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_CheckActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
@@ -248,6 +250,15 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
 
     private void UpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtnActionPerformed
         // TODO add your handling code here:
+        String HalAwal = HalAwalTxt.getText();
+            String HalAkhir = HalAkhirTxt.getText();
+            int awal = Integer.parseInt(HalAwal);
+            int akhir = Integer.parseInt(HalAkhir);
+        if (Check.isSelected()) {
+            JOptionPane.showMessageDialog(rootPane, "Sukses");
+            int jumlah = akhir - awal;
+            Total.setText("Total "+ jumlah + " Halaman");
+        }
     }//GEN-LAST:event_UpdateBtnActionPerformed
 
     /**
@@ -301,23 +312,23 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox Check;
+    private javax.swing.JTextField HalAkhirTxt;
+    private javax.swing.JTextField HalAwalTxt;
     private javax.swing.JLabel Hasilnya;
     private javax.swing.JLabel Hasilnya1;
     private javax.swing.JPanel LOGO;
     private javax.swing.JLabel LOGOICON;
     private javax.swing.JLabel Salam;
+    private javax.swing.JLabel Total;
     private javax.swing.JButton UpdateBtn;
     private javax.swing.JPanel isiKekosongan;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 
     
