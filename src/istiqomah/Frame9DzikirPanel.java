@@ -46,6 +46,7 @@ public class Frame9DzikirPanel extends javax.swing.JFrame {
         DoneSiang = new javax.swing.JCheckBox();
         DonePagi = new javax.swing.JCheckBox();
         jLabel3 = new javax.swing.JLabel();
+        UpdateBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -143,6 +144,8 @@ public class Frame9DzikirPanel extends javax.swing.JFrame {
 
         jLabel3.setText("Dzikir Petang");
 
+        UpdateBtn.setText("Update");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -167,7 +170,8 @@ public class Frame9DzikirPanel extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(DonePagi)
-                                    .addComponent(DoneSiang))))))
+                                    .addComponent(DoneSiang)
+                                    .addComponent(UpdateBtn))))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(LOGO, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -193,7 +197,9 @@ public class Frame9DzikirPanel extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DoneSiang)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49)
+                .addGap(17, 17, 17)
+                .addComponent(UpdateBtn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -335,6 +341,7 @@ public class Frame9DzikirPanel extends javax.swing.JFrame {
     private javax.swing.JPanel LOGO;
     private javax.swing.JLabel LOGOICON;
     private javax.swing.JLabel Salam;
+    private javax.swing.JButton UpdateBtn;
     private javax.swing.JPanel isiKekosongan;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

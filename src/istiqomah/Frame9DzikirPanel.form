@@ -47,6 +47,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="DonePagi" min="-2" max="-2" attributes="0"/>
                                   <Component id="DoneSiang" min="-2" max="-2" attributes="0"/>
+                                  <Component id="UpdateBtn" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -85,7 +86,9 @@
                   <Component id="DoneSiang" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel3" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Component id="UpdateBtn" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -247,6 +250,11 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Dzikir Petang"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="UpdateBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Update"/>
       </Properties>
     </Component>
   </SubComponents>
