@@ -15,6 +15,9 @@ public class Istiqomah {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Frame1Salam f1 = new Frame1Salam();
+        f1.setLocationRelativeTo(null);
+        f1.setVisible(true);
     }
     
 }
