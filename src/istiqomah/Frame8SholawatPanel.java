@@ -214,6 +214,11 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        int panel = 2;
+        Frame6WeeklyReport f6 = new Frame6WeeklyReport(panel);
+        f6.setLocationRelativeTo(null);
+        f6.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void JumlahSholawatTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JumlahSholawatTxtActionPerformed

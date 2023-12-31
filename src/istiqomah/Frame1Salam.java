@@ -44,9 +44,9 @@ public class Frame1Salam extends javax.swing.JFrame {
         LOGO.setLayout(LOGOLayout);
         LOGOLayout.setHorizontalGroup(
             LOGOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LOGOLayout.createSequentialGroup()
-                .addGap(0, 50, Short.MAX_VALUE)
-                .addComponent(LOGOICON))
+            .addGroup(LOGOLayout.createSequentialGroup()
+                .addComponent(LOGOICON)
+                .addGap(0, 50, Short.MAX_VALUE))
         );
         LOGOLayout.setVerticalGroup(
             LOGOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

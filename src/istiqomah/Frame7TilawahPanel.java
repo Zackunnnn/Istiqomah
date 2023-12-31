@@ -226,6 +226,11 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        int panel = 1;
+        Frame6WeeklyReport f6 = new Frame6WeeklyReport(panel);
+        f6.setLocationRelativeTo(null);
+        f6.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void HalAwalTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HalAwalTxtActionPerformed
@@ -256,7 +261,7 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
             int akhir = Integer.parseInt(HalAkhir);
         if (Check.isSelected()) {
             JOptionPane.showMessageDialog(rootPane, "Sukses");
-            int jumlah = akhir - awal;
+            int jumlah = akhir - awal + 1;
             Total.setText("Total "+ jumlah + " Halaman");
         }
     }//GEN-LAST:event_UpdateBtnActionPerformed
