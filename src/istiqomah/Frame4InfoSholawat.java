@@ -16,6 +16,7 @@ public class Frame4InfoSholawat extends javax.swing.JFrame {
     public Frame4InfoSholawat() {
         initComponents();
     }
+    int fixJumlah1 = 0;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -42,8 +43,6 @@ public class Frame4InfoSholawat extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        LOGOICON.setText("ISTIQOMAH");
 
         javax.swing.GroupLayout LOGOLayout = new javax.swing.GroupLayout(LOGO);
         LOGO.setLayout(LOGOLayout);

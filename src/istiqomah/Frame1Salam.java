@@ -17,6 +17,8 @@ public class Frame1Salam extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,27 +37,24 @@ public class Frame1Salam extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(950, 600));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        LOGOICON.setText("ISTIQOMAH");
+        LOGOICON.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Desain tanpa judul.png"))); // NOI18N
 
         javax.swing.GroupLayout LOGOLayout = new javax.swing.GroupLayout(LOGO);
         LOGO.setLayout(LOGOLayout);
         LOGOLayout.setHorizontalGroup(
             LOGOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LOGOLayout.createSequentialGroup()
-                .addComponent(LOGOICON)
-                .addGap(0, 50, Short.MAX_VALUE))
+            .addComponent(LOGOICON, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         LOGOLayout.setVerticalGroup(
             LOGOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LOGOLayout.createSequentialGroup()
-                .addComponent(LOGOICON, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 73, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LOGOLayout.createSequentialGroup()
+                .addComponent(LOGOICON)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        getContentPane().add(LOGO, new org.netbeans.lib.awtextra.AbsoluteConstraints(836, 0, -1, -1));
+        getContentPane().add(LOGO, new org.netbeans.lib.awtextra.AbsoluteConstraints(856, 0, 100, 100));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel3.setText("Masukan namamu dulu yuk!");
@@ -94,6 +93,7 @@ public class Frame1Salam extends javax.swing.JFrame {
         f2.setLocationRelativeTo(null);
         f2.setVisible(true);
         this.setVisible(false);
+        
         
     }//GEN-LAST:event_OkButtonActionPerformed
 

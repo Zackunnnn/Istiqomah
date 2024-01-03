@@ -23,6 +23,7 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
         initComponents();
     }
     
+    int _jumlah = 0;
     int panelLah;
     
     /**
@@ -231,6 +232,13 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
         f6.setLocationRelativeTo(null);
         f6.setVisible(true);
         this.setVisible(false);
+        
+//        Frame6WeeklyReport f61 = new Frame6WeeklyReport();
+//        f61.hal1.setText(_jumlah + " Hal");
+//        f61.Done1.setText("Done");
+//        f61.setLocationRelativeTo(null);
+//        f61.setVisible(true);
+//        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void HalAwalTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HalAwalTxtActionPerformed
@@ -255,6 +263,7 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
 
     private void UpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtnActionPerformed
         // TODO add your handling code here:
+        //Try catch 
         String HalAwal = HalAwalTxt.getText();
             String HalAkhir = HalAkhirTxt.getText();
             int awal = Integer.parseInt(HalAwal);
@@ -263,6 +272,7 @@ public class Frame7TilawahPanel extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Sukses");
             int jumlah = akhir - awal + 1;
             Total.setText("Total "+ jumlah + " Halaman");
+            this._jumlah = jumlah;
         }
     }//GEN-LAST:event_UpdateBtnActionPerformed
 

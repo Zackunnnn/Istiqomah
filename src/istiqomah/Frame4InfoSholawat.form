@@ -98,9 +98,6 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="LOGOICON">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="ISTIQOMAH"/>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>

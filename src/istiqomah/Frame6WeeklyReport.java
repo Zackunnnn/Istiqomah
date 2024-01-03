@@ -9,13 +9,62 @@ package istiqomah;
  * @author Ammar Dzakwan
  */
 public class Frame6WeeklyReport extends javax.swing.JFrame {
-    //Panel panel;
+
     
-    /**
-     * Creates new form Frame1Salam
-     */
+    private String[][] Status = new String[4][7];
+    private String[] Tilawah = new String[7];
+    private String[] Sholawat = new String[7];
+    
+     
+    
     public Frame6WeeklyReport() {
-        initComponents();
+        
+//        for (int i = 0; i < Status.length; i++) {
+//            for (int j = 0; j < Status[i].length ; j++) {
+//                //System.out.print("masukan nilai ke:");
+//                //scores[i][j] = scanner.nextDouble();
+//                //x++;
+//                Status[i][j] = "    x    ";
+//                
+//            }
+//       }
+//        
+//        for (int i = 0; i < Tilawah.length; i++) {
+//            Tilawah[i] = "0 Hal";
+//            
+//        }
+//        for (int i = 0; i < Sholawat.length; i++) {
+//            Sholawat[i] = "1";
+//            
+//        }
+//        
+//        initComponents();
+//        
+//        String[][] Status = new String[4][7];
+//        String[] Tilawah = new String[7];
+//        String[] Sholawat = new String[7];
+//        
+//        //Frame6WeeklyReport f6 = new Frame6WeeklyReport();
+//        
+//        for (int i = 0; i < Status.length; i++) {
+//            for (int j = 0; j < Status[i].length ; j++) {
+//                //System.out.print("masukan nilai ke:");
+//                //scores[i][j] = scanner.nextDouble();
+//                //x++;
+//                Status[i][j] = "    x    ";
+//                
+//            }
+//       }
+        
+//        for (int i = 0; i < Tilawah.length; i++) {
+//            Tilawah[i] = "0 Hal";
+//            
+//        }
+//        for (int i = 0; i < Sholawat.length; i++) {
+//            Sholawat[i] = "1";
+//        }
+//        
+//        
     }
     
     public Frame6WeeklyReport(int panel) {
@@ -23,11 +72,11 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
         initComponents();
         Check.setText(panel + "");
         //Panel = new panel();
-        
+      
     }
     
         int panelCuy;
-    
+        
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -86,24 +135,23 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
         Done26 = new javax.swing.JLabel();
         Done27 = new javax.swing.JLabel();
         Done28 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        SholCheck = new javax.swing.JLabel();
+        hal1 = new javax.swing.JLabel();
+        hal2 = new javax.swing.JLabel();
+        hal3 = new javax.swing.JLabel();
+        hal4 = new javax.swing.JLabel();
+        hal5 = new javax.swing.JLabel();
+        hal6 = new javax.swing.JLabel();
+        hal7 = new javax.swing.JLabel();
         SholCheck1 = new javax.swing.JLabel();
         SholCheck2 = new javax.swing.JLabel();
         SholCheck3 = new javax.swing.JLabel();
         SholCheck4 = new javax.swing.JLabel();
         SholCheck5 = new javax.swing.JLabel();
         SholCheck6 = new javax.swing.JLabel();
+        SholCheck7 = new javax.swing.JLabel();
         Check = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(950, 600));
 
         LOGOICON.setText("ISTIQOMAH");
 
@@ -177,75 +225,73 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
 
         Done1.setText("    x");
 
-        Done2.setText("Done");
+        Done2.setText("    x    ");
 
-        Done3.setText("Done");
+        Done3.setText("    x    ");
 
-        Done4.setText("Done");
+        Done4.setText("    x    ");
 
-        Done5.setText("Done");
+        Done5.setText("     x    ");
 
-        Done6.setText("Done");
+        Done6.setText("    x    ");
 
-        Done7.setText("Done");
+        Done7.setText("     x    ");
 
-        Done8.setText("Done");
+        Done8.setText("    x");
 
-        Done9.setText("Done");
+        Done9.setText("    x    ");
 
-        Done10.setText("Done");
+        Done10.setText("    x    ");
 
-        Done11.setText("Done");
+        Done11.setText("    x    ");
 
-        Done12.setText("Done");
+        Done12.setText("    x    ");
 
-        Done13.setText("Done");
+        Done13.setText("    x    ");
 
-        Done14.setText("Done");
+        Done14.setText("     x    ");
 
-        Done15.setText("Done");
+        Done15.setText("    x");
 
-        Done16.setText("Done");
+        Done16.setText("    x    ");
 
-        Done17.setText("Done");
+        Done17.setText("    x    ");
 
-        Done18.setText("Done");
+        Done18.setText("    x   ");
 
-        Done19.setText("Done");
+        Done19.setText("     x    ");
 
-        Done20.setText("Done");
+        Done20.setText("    x    ");
 
-        Done21.setText("Done");
+        Done21.setText("     x     ");
 
-        Done22.setText("Done");
+        Done22.setText("    x    ");
 
-        Done23.setText("Done");
+        Done23.setText("    x    ");
 
-        Done24.setText("Done");
+        Done24.setText("    x    ");
 
-        Done25.setText("Done");
+        Done25.setText("    x    ");
 
-        Done26.setText("Done");
+        Done26.setText("    x    ");
 
-        Done27.setText("Done");
+        Done27.setText("    x    ");
 
-        Done28.setText("Done");
+        Done28.setText("     x    ");
 
-        jLabel2.setText("0 Hal");
+        hal1.setText("0 Hal");
 
-        jLabel3.setText("0 Hal");
+        hal2.setText("0 Hal");
 
-        jLabel4.setText("0 Hal");
+        hal3.setText("0 Hal");
 
-        jLabel5.setText("0 Hal");
+        hal4.setText("0 Hal");
 
-        jLabel6.setText("0 Hal");
+        hal5.setText("0 Hal");
 
-        jLabel7.setText("0 Hal");
+        hal6.setText("0 Hal");
 
-        jLabel8.setText("0 Hal");
-
-        SholCheck.setText("0");
+        hal7.setText("0 Hal");
 
         SholCheck1.setText("0");
 
@@ -258,6 +304,8 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
         SholCheck5.setText("0");
 
         SholCheck6.setText("0");
+
+        SholCheck7.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -288,22 +336,22 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(hal1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(Hari1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(Hari2, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                            .addComponent(hal2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(Hari3, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                            .addComponent(hal3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(hal4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(hal5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(3, 3, 3))
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(Hari5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -356,15 +404,15 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
                                                         .addGap(47, 47, 47)
                                                         .addComponent(Hari4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                             .addGroup(layout.createSequentialGroup()
-                                                .addComponent(SholCheck, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(22, 22, 22)
                                                 .addComponent(SholCheck1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(22, 22, 22)
                                                 .addComponent(SholCheck2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(22, 22, 22)
                                                 .addComponent(SholCheck3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(22, 22, 22)
+                                                .addComponent(SholCheck4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(SholCheck4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(SholCheck5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addGap(0, 0, Short.MAX_VALUE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -372,42 +420,41 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
                                     .addComponent(Day5, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Day7))
                                 .addGap(73, 73, 73)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(53, 53, 53)
-                                .addComponent(Done28))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Hari6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Done6))
-                                        .addGap(21, 21, 21))
                                     .addGroup(layout.createSequentialGroup()
+                                        .addGap(25, 25, 25)
+                                        .addComponent(Done27)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(Done28))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(23, 23, 23)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(3, 3, 3)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(Done20)
-                                                    .addComponent(Done27)))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(9, 9, 9)
-                                                .addComponent(Done13)))
-                                        .addGap(24, 24, 24)))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(Done21)
-                                    .addComponent(Done14)
-                                    .addComponent(Done7)
-                                    .addComponent(Hari7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addComponent(hal6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(SholCheck6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(hal7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(SholCheck7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(20, 20, 20)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(Done6)
+                                            .addComponent(Hari6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(Done13))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(Done7)
+                                            .addComponent(Hari7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(Done14))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(SholCheck5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(SholCheck6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 219, Short.MAX_VALUE))
+                                .addGap(0, 23, Short.MAX_VALUE)
+                                .addComponent(Done20)
+                                .addGap(18, 18, 18)
+                                .addComponent(Done21)
+                                .addGap(213, 213, 213))))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(Salam, javax.swing.GroupLayout.PREFERRED_SIZE, 369, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -479,25 +526,25 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Day6)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8))
+                    .addComponent(hal1)
+                    .addComponent(hal2)
+                    .addComponent(hal3)
+                    .addComponent(hal4)
+                    .addComponent(hal5)
+                    .addComponent(hal6)
+                    .addComponent(hal7))
                 .addGap(2, 2, 2)
                 .addComponent(Day7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Day5)
-                    .addComponent(SholCheck)
                     .addComponent(SholCheck1)
                     .addComponent(SholCheck2)
                     .addComponent(SholCheck3)
                     .addComponent(SholCheck4)
                     .addComponent(SholCheck5)
-                    .addComponent(SholCheck6))
+                    .addComponent(SholCheck6)
+                    .addComponent(SholCheck7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -530,7 +577,8 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
         this.setVisible(false);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    
+            
     private void PilihHariPertamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PilihHariPertamaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PilihHariPertamaActionPerformed
@@ -538,26 +586,26 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         switch (panelCuy) {
-            case 1:
+            case 1 -> {
                 Frame7TilawahPanel f7 = new Frame7TilawahPanel(panelCuy);
                 f7.setLocationRelativeTo(null);
                 f7.setVisible(true);
                 this.setVisible(false);
-                break;
-            case 2:
+            }
+            case 2 -> {
                 Frame8SholawatPanel f8 = new Frame8SholawatPanel(panelCuy);
                 f8.setLocationRelativeTo(null);
                 f8.setVisible(true);
                 this.setVisible(false);
-                break;
-            case 3:
+            }
+            case 3 -> {
                 Frame9DzikirPanel f9 = new Frame9DzikirPanel(panelCuy);
                 f9.setLocationRelativeTo(null);
                 f9.setVisible(true);
                 this.setVisible(false);
-                break;
-            default:
-                break;
+            }
+            default -> {
+            }
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -620,34 +668,34 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
     private javax.swing.JLabel Day5;
     private javax.swing.JLabel Day6;
     private javax.swing.JLabel Day7;
-    private javax.swing.JLabel Done1;
-    private javax.swing.JLabel Done10;
-    private javax.swing.JLabel Done11;
-    private javax.swing.JLabel Done12;
-    private javax.swing.JLabel Done13;
-    private javax.swing.JLabel Done14;
-    private javax.swing.JLabel Done15;
-    private javax.swing.JLabel Done16;
-    private javax.swing.JLabel Done17;
-    private javax.swing.JLabel Done18;
-    private javax.swing.JLabel Done19;
-    private javax.swing.JLabel Done2;
-    private javax.swing.JLabel Done20;
-    private javax.swing.JLabel Done21;
-    private javax.swing.JLabel Done22;
-    private javax.swing.JLabel Done23;
-    private javax.swing.JLabel Done24;
-    private javax.swing.JLabel Done25;
-    private javax.swing.JLabel Done26;
-    private javax.swing.JLabel Done27;
-    private javax.swing.JLabel Done28;
-    private javax.swing.JLabel Done3;
-    private javax.swing.JLabel Done4;
-    private javax.swing.JLabel Done5;
-    private javax.swing.JLabel Done6;
-    private javax.swing.JLabel Done7;
-    private javax.swing.JLabel Done8;
-    private javax.swing.JLabel Done9;
+    public javax.swing.JLabel Done1;
+    public javax.swing.JLabel Done10;
+    public javax.swing.JLabel Done11;
+    public javax.swing.JLabel Done12;
+    public javax.swing.JLabel Done13;
+    public javax.swing.JLabel Done14;
+    public javax.swing.JLabel Done15;
+    public javax.swing.JLabel Done16;
+    public javax.swing.JLabel Done17;
+    public javax.swing.JLabel Done18;
+    public javax.swing.JLabel Done19;
+    public javax.swing.JLabel Done2;
+    public javax.swing.JLabel Done20;
+    public javax.swing.JLabel Done21;
+    public javax.swing.JLabel Done22;
+    public javax.swing.JLabel Done23;
+    public javax.swing.JLabel Done24;
+    public javax.swing.JLabel Done25;
+    public javax.swing.JLabel Done26;
+    public javax.swing.JLabel Done27;
+    public javax.swing.JLabel Done28;
+    public javax.swing.JLabel Done3;
+    public javax.swing.JLabel Done4;
+    public javax.swing.JLabel Done5;
+    public javax.swing.JLabel Done6;
+    public javax.swing.JLabel Done7;
+    public javax.swing.JLabel Done8;
+    public javax.swing.JLabel Done9;
     private javax.swing.JLabel Hari1;
     private javax.swing.JLabel Hari2;
     private javax.swing.JLabel Hari3;
@@ -659,22 +707,22 @@ public class Frame6WeeklyReport extends javax.swing.JFrame {
     private javax.swing.JLabel LOGOICON;
     private javax.swing.JComboBox<String> PilihHariPertama;
     private javax.swing.JLabel Salam;
-    private javax.swing.JLabel SholCheck;
-    private javax.swing.JLabel SholCheck1;
-    private javax.swing.JLabel SholCheck2;
-    private javax.swing.JLabel SholCheck3;
-    private javax.swing.JLabel SholCheck4;
-    private javax.swing.JLabel SholCheck5;
-    private javax.swing.JLabel SholCheck6;
+    public javax.swing.JLabel SholCheck1;
+    public javax.swing.JLabel SholCheck2;
+    public javax.swing.JLabel SholCheck3;
+    public javax.swing.JLabel SholCheck4;
+    public javax.swing.JLabel SholCheck5;
+    public javax.swing.JLabel SholCheck6;
+    public javax.swing.JLabel SholCheck7;
+    public javax.swing.JLabel hal1;
+    public javax.swing.JLabel hal2;
+    public javax.swing.JLabel hal3;
+    public static javax.swing.JLabel hal4;
+    public javax.swing.JLabel hal5;
+    public javax.swing.JLabel hal6;
+    public javax.swing.JLabel hal7;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }

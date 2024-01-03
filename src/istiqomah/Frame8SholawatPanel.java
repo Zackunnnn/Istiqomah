@@ -4,6 +4,8 @@
  */
 package istiqomah;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ammar Dzakwan
@@ -14,6 +16,7 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
      * Creates new form Frame1Salam
      */
     public Frame8SholawatPanel() {
+        
         initComponents();
     }
     public Frame8SholawatPanel(int panelCuy) {
@@ -21,7 +24,9 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
         initComponents();
     }
 
+    int fixJumlah1 = 0;
     int panelLah;
+    int _benar1;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -41,6 +46,7 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
         Hasilnya = new javax.swing.JLabel();
         Hasilnya1 = new javax.swing.JLabel();
         isiKekosongan = new javax.swing.JPanel();
+        Hasil = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         JumlahSholawatTxt = new javax.swing.JTextField();
         DoneSholawat = new javax.swing.JCheckBox();
@@ -95,6 +101,8 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
+        Hasil.setText("Jumlah Sholawat mu 0");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -106,11 +114,16 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
                     .addComponent(Hasilnya, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addComponent(isiKekosongan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(Hasil)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(133, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(Hasil)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 104, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(isiKekosongan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -219,6 +232,13 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
         f6.setLocationRelativeTo(null);
         f6.setVisible(true);
         this.setVisible(false);
+        
+//        Frame6WeeklyReport f61 = new Frame6WeeklyReport();
+//        f61.SholCheck1.setText(JumlahSholawatTxt.getText());
+//        f61.Done8.setText("Done");
+//        f61.setLocationRelativeTo(null);
+//        f61.setVisible(true);
+//        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void JumlahSholawatTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JumlahSholawatTxtActionPerformed
@@ -242,7 +262,31 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void UpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtnActionPerformed
-        // TODO add your handling code here:
+        //try catch
+        String sholawat = JumlahSholawatTxt.getText();
+        int jumlah = Integer.parseInt(sholawat);
+        this.fixJumlah1 = jumlah;
+        int benar1 = 0;
+        
+        
+        if (DoneSholawat.isSelected()) {
+            
+            if (jumlah < 100){
+            JOptionPane.showMessageDialog(rootPane, "Ayoo minimal 100");
+            
+        } else if (jumlah < 1000){
+            JOptionPane.showMessageDialog(rootPane, "Sukses");
+            Hasil.setText("Total Sholawat mu "+ jumlah);
+            benar1 = 1;
+            } else {
+            JOptionPane.showMessageDialog(rootPane, "Wah MasyaAllah.. Kerennn");
+            Hasil.setText("Total Sholawat mu "+ jumlah);
+            benar1 = 1;
+        }
+        }
+        this._benar1 = benar1;
+        
+        
     }//GEN-LAST:event_UpdateBtnActionPerformed
 
     /**
@@ -314,13 +358,14 @@ public class Frame8SholawatPanel extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AyoMin100;
     private javax.swing.JCheckBox DoneSholawat;
+    private javax.swing.JLabel Hasil;
     private javax.swing.JLabel Hasilnya;
     private javax.swing.JLabel Hasilnya1;
     private javax.swing.JTextField JumlahSholawatTxt;
     private javax.swing.JPanel LOGO;
     private javax.swing.JLabel LOGOICON;
     private javax.swing.JLabel Salam;
-    private javax.swing.JButton UpdateBtn;
+    public javax.swing.JButton UpdateBtn;
     private javax.swing.JPanel isiKekosongan;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

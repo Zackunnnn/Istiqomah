@@ -4,6 +4,8 @@
  */
 package istiqomah;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ammar Dzakwan
@@ -145,6 +147,11 @@ public class Frame9DzikirPanel extends javax.swing.JFrame {
         jLabel3.setText("Dzikir Petang");
 
         UpdateBtn.setText("Update");
+        UpdateBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UpdateBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -239,6 +246,20 @@ public class Frame9DzikirPanel extends javax.swing.JFrame {
         f2.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void UpdateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UpdateBtnActionPerformed
+        // TODO add your handling code here:
+        
+        if (DonePagi.isSelected()){
+            JOptionPane.showMessageDialog(rootPane, "Sukses");
+            
+        }
+        
+        if (DonePagi.isSelected()){
+            JOptionPane.showMessageDialog(rootPane, "Sukses");
+            
+        }
+    }//GEN-LAST:event_UpdateBtnActionPerformed
 
     /**
      * @param args the command line arguments
